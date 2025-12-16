@@ -50,11 +50,11 @@
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="home.html">Home<br></a></li>
-          <li><a href="about.html" class="active">About</a></li>
-          <li><a href="learn.html">Learn</a></li>
-          <li><a href="hospital.html">Hospitals</a></li>
-          <li><a href="blog.html">Blogs</a></li>
+          <li><a href="{% url 'home' %}">Home<br></a></li>
+          <li><a href="{% url 'about' %}" class="active">About</a></li>
+          <li><a href="{% url 'learn' %}">Learn</a></li>
+          <li><a href="{% url 'hospital' %}">Hospitals</a></li>
+          <li><a href="{% url 'blog' %}">Blogs</a></li>
           <!-- <li><a href="pricing.html">Pricing</a></li> -->
           <!-- <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
@@ -73,12 +73,12 @@
               <li><a href="#">Dropdown 4</a></li>
             </ul>
           </li> -->
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="{% url 'contact' %}">Contact</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
-      <a class="btn-getstarted" href="learn.html">Get Started</a>
+      <a class="btn-getstarted" href="{% url 'learn' %}">Get Started</a>
 
     </div>
   </header>
@@ -94,7 +94,7 @@
         <h2 data-aos="fade-up" data-aos-delay="200">Protecting Women's Health</h2>
         <p data-aos="fade-up" data-aos-delay="200">CerviCare empowers women with accurate cervical cancer education, early screening information, and access to the nearest clinics and hospitals.</p>
         <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
-          <a href="learn.html" class="btn-get-started">Get Started</a>
+          <a href="{% url 'learn' %}" class="btn-get-started">Get Started</a>
         </div>
       </div>
 
@@ -509,11 +509,11 @@
         <div class="col-lg-2 col-md-3 footer-links">
           <h4>Useful Links</h4>
           <ul>
-            <li><a href="home.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="blog.html">Blogs</a></li>
-            <li><a href="learn.html">Learn</a></li>
-            <li><a href="hospital.html">Hospitals</a></li>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'blog' %}">Blogs</a></li>
+            <li><a href="{% url 'learn' %}">Learn</a></li>
+            <li><a href="{% url 'hospital' %}">Hospitals</a></li>
           </ul>
         </div>
 
