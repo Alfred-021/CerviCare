@@ -19,6 +19,8 @@ numpy==2.3.5
 packaging==25.0
 pandas==2.3.3
 pillow==12.0.0
+psycopg==3.3.2
+psycopg-binary==3.3.2
 psycopg2-binary==2.9.11
 pycparser==2.23
 pyparsing==3.2.5
