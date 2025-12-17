@@ -9,6 +9,9 @@ def home(request):
 def about(request):
     return render(request, 'about.html')
 
+def hospitals(request):
+    return render(request, 'hospitals.html')
+
 def learn(request):
     return render(request, 'learn.html')
 
