@@ -60,3 +60,8 @@ def hospital_delete(request, pk):
         hospital.delete()
         return redirect('hospital_list')
     return render(request, 'hospital_confirm_delete.html', {'hospital': hospital})
+
+def hospitals(request):
+    hospital_list = Hospital.objects.all()
+    return render(request, 'hospitals.html', {'hospitals': hospital_list})
+
